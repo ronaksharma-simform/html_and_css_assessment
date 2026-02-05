@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: grey;
+}
+
 :root {
     --blue-color: #2874f0;
 }
@@ -17,19 +21,21 @@ header {
     /* gap: 264px; */
 }
 
-.header-left{
+.header-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
 }
-.header-right{
+
+.header-right {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 51px;
     /* margin-left:120px ; */
 }
+
 .icon {
     display: flex;
     flex-direction: column;
@@ -80,7 +86,7 @@ input {
 }
 
 .login-button {
-    color: var(--blue-color) ; 
+    color: var(--blue-color);
     font-size: 1.1rem;
     font-weight: 500;
     background-color: #fff;
@@ -94,7 +100,7 @@ input {
     font-size: 1.2rem;
 } */
 
-select {
+select[name="nav-select"] {
     border: none;
     background-color: transparent;
     color: #fff;
@@ -102,11 +108,46 @@ select {
     font-size: 1.1rem;
     padding: 2px;
 }
-.cart{
+
+.cart {
     color: #fff;
     font-weight: 800;
     font-size: 1.1rem;
 }
-.cart-icon{
-    /* fon */
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 12px;
+    background-color: white;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-item-image {
+    height: 75px;
+    width: 80px;
+    /* object-fit: contain; */
+}
+
+.category-item-text {
+    color: #5c5454;
+    font-weight: 600;
+}
+
+select[name="category-select"] {
+   border: none;
+    background-color: transparent;
+    color: #5c5454;
+    font-weight: 600;
+    font-size: 1REM;
+    font-family: serif;
 }
