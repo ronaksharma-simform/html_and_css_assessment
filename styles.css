@@ -1,5 +1,112 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --blue-color: #2874f0;
+}
+
+header {
+    background-color: var(--blue-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 264px; */
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.header-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 51px;
+    /* margin-left:120px ; */
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#plus-icon {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    margin-left: -1.5px;
+}
+
+.plus-text {
+    color: #FFE500;
+}
+
+#flipkart-icon {
+    height: 30px;
+    /* width: 50px; */
+    object-fit: contain;
+}
+
+.icon-bottom {
+    font-style: italic;
+    margin-top: -4px;
+}
+
+input {
+    width: 400px;
+    border: none;
+    font-weight: 600;
+}
+
+.search-bar {
+    background-color: #fff;
+    padding: 0.4rem .8rem;
+}
+
+.search-icon {
+    /* height: 100px; */
+    color: var(--blue-color);
+}
+
+.login-button {
+    color: var(--blue-color) ; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 6px 50px;
+    border: none;
+}
+
+/* .drop-down-nav{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+} */
+
+select {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 2px;
+}
+.cart{
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.cart-icon{
+    /* fon */
 }
