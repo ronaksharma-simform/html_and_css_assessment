@@ -2,23 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #F1F3F6;
+    background-color: #F1F4F6;
 }
 
 :root {
     --blue-color: #2874f0;
 }
-
+/* Header Section Starts */
 header {
     background-color: var(--blue-color);
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     /* gap: 264px; */
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .header-left {
@@ -95,16 +100,13 @@ input {
     border: none;
 }
 
-/* .drop-down-nav{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.2rem;
-} */
+
 
 select[name="nav-select"] {
     border: none;
     background-color: transparent;
     color: #fff;
+    outline: none;
     font-weight: 600;
     font-size: 1.1rem;
     padding: 2px;
@@ -115,7 +117,9 @@ select[name="nav-select"] {
     font-weight: 800;
     font-size: 1.1rem;
 }
+/* Header Section Ends */
 
+/* Category Section Starts */
 .category-container {
     display: flex;
     flex-wrap: wrap;
@@ -147,11 +151,12 @@ select[name="nav-select"] {
 
 select[name="category-select"] {
     border: none;
+    outline: none;
     background-color: transparent;
     color: #5c5454;
     font-weight: 600;
     font-size: 1REM;
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .deals-of-the-day {
@@ -168,11 +173,16 @@ select[name="category-select"] {
     border-bottom: 01px solid rgb(231, 226, 226);
 }
 
+
+
 .deals-text {
     font-size: 23px;
-    font-weight: bolder;
+    margin-right: 10px;
+    /* font-weight: bold; */
 }
+/* Category Section Ends */
 
+/* Products Section Starts */
 .time-text {
     color: gray;
     font-weight: 600;
@@ -204,6 +214,7 @@ select[name="category-select"] {
 
 .product-description {
     display: flex;
+    margin-top: 12px;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
@@ -232,7 +243,7 @@ select[name="category-select"] {
 }
 
 .grey-text {
-    color: #CCCCCC;
+    color: #787373;
 }
 
 .product-with-offer-image {
@@ -250,8 +261,8 @@ select[name="category-select"] {
 }
 
 .shop-now-text {
-    color: #5c5454;
-    font-weight: 100;
+    color: #787373;
+    font-weight: 400;
     gap: 5px;
     font-size: 15px;
 }
@@ -284,4 +295,82 @@ select[name="category-select"] {
     position: absolute;
     top: 39%;
     right: 0%;
+}
+/* Products Section Ends */
+
+@media (max-width:768px) {
+
+    /* Header Section Starts */
+    .flipkart-icon {
+        height: 10px;
+        width: 20px;
+        object-fit: cover;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .header-right {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .login-button {
+        padding: 2px 18px;
+    }
+
+    /* Header Section Ends */
+    /* Category Section Starts */
+    .category-container {
+        gap: 10px;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+    }
+
+    /* Category Section Ends */
+
+    /* Products Section Starts */
+    .deals-of-the-day {
+        margin: 20px;
+    }
+
+    .offers-image {
+        display: none;
+    }
+
+    .show-more-products-container {
+        display: none;
+    }
+
+    .product-container {
+        /* gap: 5px; */
+        overflow: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product-showcase-section {
+        margin: 20px;
+    }
+
+    .deals-heading-sub {
+        display: flex;
+        gap: -10px;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: start;
+    }
+
+    /* Product Section Ends */
 }
