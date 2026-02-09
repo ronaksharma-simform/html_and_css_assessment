@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart - Online Shopping Site for Mobiles, Electronics, Furniture, Grocery & More</title>
+    <!-- Favicon -->
     <link rel="shortcut icon"
         href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" />
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome icon CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Fonts CDN link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts CDN link Ends -->
 </head>
 
 <body>
     <!-- Header Section Starts-->
+
     <header>
         <div class="header-left">
             <div class="icon">
@@ -32,13 +38,10 @@
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Search for products, brands, and more">
-
-                <!-- <img src="images/search.png" alt="Search icon" class="search-icon"> -->
                 <i class='fas fa-search search-icon'></i>
             </div>
         </div>
         <div class="header-right">
-
             <button class="login-button">Login</button>
             <div class="drop-down-nav">
                 <select name="nav-select" id="nav-select">
@@ -50,10 +53,12 @@
             </div>
         </div>
     </header>
+
     <!-- Header Section Ends-->
+
     <!-- Category Section  Starts  -->
 
-    <section class="category">
+    <nav class="category">
         <div class="category-container">
             <div class="category-item">
                 <img class="category-item-image"
@@ -127,34 +132,34 @@
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
+
     <!-- Category Section  Ends -->
 
     <!-- Product Section Starts   -->
-
+    <!-- Deals of the day Section Starts -->
     <section class="deals-of-the-day">
 
 
         <div class="product-with-offer-image">
 
-            <div class="deals-container">
+            <div class="deals-container product-offers">
                 <div class="show-more-products-container">
                     <i class="fa-solid fa-greater-than show-more-products-icon"></i>
-
                 </div>
                 <div class="deals-heading">
                     <div class="deals-heading-sub">
 
                         <span class="deals-text">Deals of the Day</span>&nbsp;&nbsp;
-                        
+
                         <span class="time-text"><i class='far fa-clock clock-icon'></i>&nbsp; 20 : 30 : 00 Left</span>
                     </div>
 
-                    <div >
+                    <div>
                         <button class="view-all">VIEW ALL</button>
                     </div>
                 </div>
-                <div class="product-container"> 
+                <div class="product-container">
                     <div class="product-item">
                         <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/b/y/y/-original-imahg634mf28c2xe.jpeg?q=70"
                             class="product-image" alt="Watch">
@@ -196,7 +201,7 @@
                             class="product-image" alt="Wireless Headphones">
                         <div class="product-description">
                             <div>Wireless Headphones</div>
-                            <div class="green-text">Flat ₹1000 off  </div>
+                            <div class="green-text">Flat ₹1000 off </div>
                             <div class="grey-text">Now ₹999</div>
                         </div>
                     </div>
@@ -219,16 +224,16 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
-            <div class="offer-image">
+            <aside class="offer-image">
                 <img src="./images/first_image.png" alt="Offers Image" class="offers-image">
-            </div>
+            </aside>
         </div>
 
     </section>
-
+    <!-- Deals of the day Section Ends -->
 
     <!-- Product Showcase Menu Starts -->
     <section class="product-showcase-section">
@@ -265,7 +270,7 @@
                         <div class="grey-text">By Revel</div>
                     </div>
                 </div>
-                 <div class="product-item">
+                <div class="product-item">
                     <img src="https://rukminim2.flixcart.com/image/612/612/l1dwknk0/harmonium/j/8/j/42-folding-harmonium-bass-male-two-reeds-finish-maga-mart-original-imagcynhnyjjnvg8.jpeg?q=70"
                         class="product-image" alt="Harmoniums ">
                     <div class="product-description">
@@ -283,7 +288,7 @@
                         <div class="grey-text">Shop Now!</div>
                     </div>
                 </div>
-                 <div class="product-item">
+                <div class="product-item">
                     <img src="https://rukminim1.flixcart.com/image/612/612/krp94sw0/microphone-accessory/n/e/1/heavy-duty-xtag-original-imag5ffz2xargbws.jpeg?q=70"
                         class="product-image" alt="Microphone Accessories">
 
@@ -302,15 +307,13 @@
                         <div class="grey-text">Juarez, Revel..</div>
                     </div>
                 </div>
-              
+
             </div>
         </div>
     </section>
 
 
     <!-- Product Showcase Menu Ends -->
-
-
 
     <!-- Product Section Ends  -->
 </body>
