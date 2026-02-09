@@ -23,7 +23,7 @@ Follow the steps below to run the project locally.
 Replace `<repo-url>` with the actual repository URL:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/ronaksharma-simform/html_and_css_assessment
 ```
 
 Navigate into the project directory
@@ -64,6 +64,35 @@ start index.html
 
 - View on desktop and resize the browser or use device emulator to test responsiveness.
 - Update HTML/CSS files to customize layout, colors, or content.
+## Implementation Details
+
+### Overview
+The project is implemented with semantic HTML5 and modular CSS to recreate Flipkart's core UI: header, category navigation, horizontal product carousels, and responsive layouts.
+
+### Structure & Components
+- Header: search input, flipkart logo, login, cart and a simple select-based "More" menu.
+- Category bar: icon tiles with images and labels of different categories like Grocery, Fashion, Electronics.
+- Product sections: horizontally scrollable product lists implemented as flex containers .
+- Offer sidebar: aside element with a promotional image.
+
+### HTML
+- Semantic tags used: header, nav, section, aside.
+- Each product is a simple card (img + description) for easy iteration.
+- All images include alt text; interactive items use buttons or native controls (select) for basic accessibility.
+
+### CSS & Layout
+- CSS variables (e.g., --blue-color) for theme values.
+- Flexbox for layout and horizontal scrolling lists (product carousels).
+- Object-fit on images for consistent sizing.
+- Custom scrollbar styling for product containers.
+- Reusable utility styles for buttons and text.
+
+### Responsiveness
+- Mobile breakpoint: max-width: 768px
+    - Search bar is hidden, product carousels wrap, offer image hidden.
+- Tablet range: 768–1023px
+    - Input width reduced; header spacing adjusted.
+- Desktop: full-width search, fixed-height product images, horizontal carousels.
 
 ## Screenshots
 
@@ -95,3 +124,7 @@ Contributions are welcome! You can:
 ## License
 
 This project is for assessment purposes. Modify and use as needed.
+
+
+
+
