@@ -1,11 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart - Online Shopping Site for Mobiles, Electronics, Furniture, Grocery & More</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+        href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome icon CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts CDN link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts CDN link Ends -->
 </head>
+
 <body>
-    <h1>Flipkart</h1>
+    <!-- Header Section Starts-->
+
+    <header>
+        <div class="header-left">
+            <div class="icon">
+                <div class="icon-top">
+                    <img src="./images/flipkart-plus_8d85f4.png" id="flipkart-icon" alt="Flipkart Icon">
+                </div>
+                <div class="icon-bottom">
+                    <span style="color: white;">Explore</span>
+                    <span> <span class="plus-text">Plus</span> <img id="plus-icon" src="./images/plus.png"
+                            alt="Plus icon"></span>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands, and more">
+                <i class='fas fa-search search-icon'></i>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="login-button">Login</button>
+            <div class="drop-down-nav">
+                <select name="nav-select" id="nav-select">
+                    <option value="More">More</option>
+                </select>
+            </div>
+            <div class="cart">
+                <i class="fa fa-shopping-cart cart-icon"></i> Cart
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section Ends-->
+
+    <!-- Category Section  Starts  -->
+
+    <nav class="category">
+        <div class="category-container">
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" alt="Minutes">
+                <div class="category-item-text">Minutes</div>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/5f2ee7f883cdb774.png?q=100"
+                    alt="Mobiles and Tablets">
+                <div class="category-item-text">Mobiles and Tablets</div>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+                    alt="Grocery Items">
+                <div class="category-item-text">Grocery</div>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                    alt="Beauty,Toys and more">
+                <div class="category-item-text"><select name="category-select" id="category-select">
+                        <option value="Beauty, Toys and more">Beauty, Toys and more</option>
+                    </select></div>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ff559cb9d803d424.png?q=100"
+                    alt="Fashion">
+                <select name="category-select" id="category-select">
+                    <option value="Fashion">Fashion</option>
+                </select>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/1788f177649e6991.png?q=100"
+                    alt="Home & Furniture">
+                <div class="category-item-text">
+                    <select name="category-select" id="category-select">
+                        <option value="Home & Furniture">Home & Furniture</option>
+                    </select>
+                </div>
+            </div>
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/af646c36d74c4be9.png?q=100"
+                    alt="Electronics">
+                <div class="category-item-text">
+                    <select name="category-select" id="category-select">
+                        <option value="Electronics">Electronics</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/3c647c2e0d937dc5.png?q=100"
+                    alt="Flight Bookings">
+                <div class="category-item-text">Flight Bookings</div>
+            </div>
+
+            <div class="category-item">
+                <img class="category-item-image"
+                    src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                    alt="TVs & Appliances">
+                <div class="category-item-text">
+                    <select name="category-select" id="category-select">
+                        <option value="TVs & Appliances">TVs & Appliances</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Section  Ends -->
+
+    <!-- Product Section Starts   -->
+    <!-- Deals of the day Section Starts -->
+    <section class="deals-of-the-day">
+
+
+        <div class="product-with-offer-image">
+
+            <div class="deals-container product-offers">
+                <div class="show-more-products-container">
+                    <i class="fa-solid fa-greater-than show-more-products-icon"></i>
+                </div>
+                <div class="deals-heading">
+                    <div class="deals-heading-sub">
+
+                        <span class="deals-text">Deals of the Day</span>&nbsp;&nbsp;
+
+                        <span class="time-text"><i class='far fa-clock clock-icon'></i>&nbsp; 20 : 30 : 00 Left</span>
+                    </div>
+
+                    <div>
+                        <button class="view-all">VIEW ALL</button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-item">
+                        <img src="https://rukminim1.flixcart.com/image/1912/1912/xif0q/watch/q/w/c/-original-imahftmvpewv7qjy.jpeg?q=90"
+                            class="product-image" alt="Watch">
+                        <div class="product-description">
+                            <div>Casio,Fastrack, Sonata...</div>
+                            <div class="green-text">Upto 80%+Extra 10%Off</div>
+                            <div class="grey-text">Knockout Deals!</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/f/l/7/18-21-0-499-temple0201sdark-homewey-decor-32-original-imah3yzcnk9nhh5k.jpeg?q=70"
+                            class="product-image" alt="Home Temples and more">
+                        <div class="product-description">
+                            <div>Home, Temples & more</div>
+                            <div class="green-text">Extra 10% Off</div>
+                            <div class="grey-text">Space Saving Furniture</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/z/e/z/silktaba810-5blk-proelite-original-imahjzjzvqmtuxrg.jpeg?q=70"
+                            class="product-image" alt="Premium Tablet Cases">
+                        <div class="product-description">
+                            <div>Premium Tablet Cases</div>
+                            <div class="green-text">Extra 10% Off</div>
+                            <div class="grey-text">For All Top Models</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70"
+                            class="product-image" alt="Top Mirrorless Camera">
+                        <div class="product-description">
+                            <div>Top Mirrorless Camera </div>
+                            <div class="green-text">From ₹59999</div>
+                            <div class="grey-text">Lowest Price Ever</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/c/r/c/-original-imahfywknc8ggrh7.jpeg?q=70"
+                            class="product-image" alt="Wireless Headphones">
+                        <div class="product-description">
+                            <div>Wireless Headphones</div>
+                            <div class="green-text">Flat ₹1000 off </div>
+                            <div class="grey-text">Now ₹999</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/klcmoi80/monitor/o/c/t/vg27aq-tuf-gaming-vg27aq-asus-original-imagyh3f2y99qrrg.jpeg?q=70"
+                            class="product-image" alt="Asus Monitors">
+                        <div class="product-description">
+                            <div>Asus Monitors</div>
+                            <div class="green-text">Extra 10%Off</div>
+                            <div class="grey-text">From ₹6599</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=70"
+                            class="product-image" alt="Remote Controls Toys">
+                        <div class="product-description">
+                            <div>Remote Control Toys</div>
+                            <div class="green-text">Upto 80% Off </div>
+                            <div class="grey-text">Buy Now!</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://rukminim1.flixcart.com/image/136/163/xif0q/shoe/c/w/v/-original-imah852sg7zkpdzf.jpeg?q=80&crop=false"
+                            class="product-image" alt="Nike Sneakers">
+                        <div class="product-description">
+                            <div>Premium Nike Sneakers</div>
+                            <div class="green-text">Upto 30% Off </div>
+                            <div class="grey-text">Buy Now!</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <aside class="offer-image">
+                <img src="./images/first_image.png" alt="Offers Image" class="offers-image">
+            </aside>
+        </div>
+
+    </section>
+    <!-- Deals of the day Section Ends -->
+
+    <!-- Product Showcase Menu Starts -->
+    <section class="product-showcase-section">
+        <div class="deals-container">
+
+            <div class="deals-heading">
+                <div class="product-showcase-heading">
+                    <span class="deals-text">Books and Music Instruments</span>
+                    <span class="shop-now-text">Shop Now!</span>
+                </div>
+                <div>
+                    <button class="view-all">VIEW ALL</button>
+                </div>
+            </div>
+            <div class="product-container product-showcase-container">
+
+
+
+                <div class="product-item">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/flute/4/d/u/f05-g-sharma-musical-store-original-imaeqnyhk6r74nth.jpeg?q=70"
+                        class="product-image" alt="Flutes">
+                    <div class="product-description">
+                        <div>Flutes</div>
+                        <div class="green-text">Upto 80% Off</div>
+                        <div class="grey-text">Shop Now!</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/k01b8280/acoustic-guitar/5/n/z/rvl-38c-lgp-3ts-revel-original-imafjx6gxggbsxtr.jpeg?q=70"
+                        class="product-image" alt="Accoustic Guitar ">
+                    <div class="product-description">
+                        <div>Accoustic Guitars</div>
+                        <div class="green-text">Starting $2999</div>
+                        <div class="grey-text">By Revel</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l1dwknk0/harmonium/j/8/j/42-folding-harmonium-bass-male-two-reeds-finish-maga-mart-original-imagcynhnyjjnvg8.jpeg?q=70"
+                        class="product-image" alt="Harmoniums ">
+                    <div class="product-description">
+                        <div>Harmoniums</div>
+                        <div class="green-text">Upto 60%Off</div>
+                        <div class="grey-text">Shop Now!</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/microphone-accessory/a/b/e/microphone-for-video-voice-recording-mic-k9-for-youtube-mobile-original-imagm3y3xneep4fh.jpeg?q=70"
+                        class="product-image" alt="Musical Accessories">
+                    <div class="product-description">
+                        <div>Musical Accessories</div>
+                        <div class="green-text">Upto 70% Off</div>
+                        <div class="grey-text">Shop Now!</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/krp94sw0/microphone-accessory/n/e/1/heavy-duty-xtag-original-imag5ffz2xargbws.jpeg?q=70"
+                        class="product-image" alt="Microphone Accessories">
+
+                    <div class="product-description">
+                        <div>Microphone Accessories</div>
+                        <div class="green-text">Upto 50% Off</div>
+                        <div class="grey-text">Shop Now!</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/k01b8280/acoustic-guitar/5/n/z/rvl-38c-lgp-3ts-revel-original-imafjx6gxggbsxtr.jpeg?q=70"
+                        class="product-image" alt="Accoustic Guitar">
+                    <div class="product-description">
+                        <div>Accoustic Guitars</div>
+                        <div class="green-text">Starting $3457</div>
+                        <div class="grey-text">Juarez, Revel..</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Product Showcase Menu Ends -->
+
+    <!-- Product Section Ends  -->
 </body>
+
 </html>
